@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Python Script
-        run: python ファイル名.py
+        run: python print('hello world').py
