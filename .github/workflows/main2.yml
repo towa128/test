@@ -1,0 +1,16 @@
+name: Run Python Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Python Script
+        run: python ファイル名.py
