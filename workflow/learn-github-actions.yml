@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run Python script
-      run: python hello.py
+      run: python newhello.py
