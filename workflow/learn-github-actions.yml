@@ -1,4 +1,4 @@
-name: Python Rename
+name: Python Print
 
 on:
   push:
@@ -6,16 +6,12 @@ on:
       - main
 
 jobs:
-  rename_hello:
+  print_hello:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Rename Python script
-      run: mv hello.py new_hello.py
-
     - name: Run Python script
-      run: python new_hello.py
-
+      run: python hello.py
